@@ -1,0 +1,22 @@
+/*
+ * Tijdsduur.cpp
+ *
+ *  Created on: Dec 21, 2017
+ *      Author: oop
+ */
+
+#include "Tijdsduur.h"
+
+Tijdsduur::Tijdsduur() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Tijdsduur:eraf(const Tijdsduur& t){
+
+}
+
+Tijdsduur::~Tijdsduur() {
+	// TODO Auto-generated destructor stub
+}
+

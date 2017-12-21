@@ -1,0 +1,14 @@
+12:35:30 **** Incremental Build of configuration Debug for project ledjes ****
+make all 
+Building file: ../hoofd.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hoofd.d" -MT"hoofd.o" -o "hoofd.o" "../hoofd.c"
+../hoofd.c:1:63: fatal error: iostream: No such file or directory
+ #include <iostream> // nodig voor cout (schrijven naar scherm)
+subdir.mk:18: recipe for target 'hoofd.o' failed
+                                                               ^
+compilation terminated.
+make: *** [hoofd.o] Error 1
+
+12:35:30 Build Finished (took 418ms)
+

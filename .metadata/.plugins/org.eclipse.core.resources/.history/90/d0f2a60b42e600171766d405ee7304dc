@@ -25,6 +25,8 @@ Tijdsduur::Tijdsduur(int m, int s):sec(s){
 
 void Tijdsduur::eraf(const Tijdsduur& t){
 	sec -= t.sec;
+
+
 }
 
 void Tijdsduur::erbij(const Tijdsduur& t){
@@ -48,11 +50,7 @@ void Tijdsduur::normaliseer(){
 void Tijdsduur::print(){
 	int min = sec/60;
 	int tempSec = sec%60;
-<<<<<<< HEAD
-	cout<<min << " minuten en "<<tempSec<<" seconden"<<endl;
-=======
 	cout<<min + " minuten en "+tempSec+" seconden"<<endl;
->>>>>>> 5cdb72d71a7c68ae6e099a416da68af3c44af06f
 }
 
 Tijdsduur::~Tijdsduur() {
