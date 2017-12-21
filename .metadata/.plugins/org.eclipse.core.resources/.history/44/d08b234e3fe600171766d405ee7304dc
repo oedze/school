@@ -1,0 +1,17 @@
+/*
+ * Tijdsduur.h
+ *
+ *  Created on: Dec 21, 2017
+ *      Author: oop
+ */
+
+#ifndef TIJDSDUUR_H_
+#define TIJDSDUUR_H_
+
+class Tijdsduur {
+public:
+	Tijdsduur();
+	virtual ~Tijdsduur();
+};
+
+#endif /* TIJDSDUUR_H_ */

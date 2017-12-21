@@ -1,0 +1,38 @@
+/*
+ * Tijdsduur.cpp
+ *
+ *  Created on: Dec 21, 2017
+ *      Author: oop
+ */
+
+#include "Tijdsduur.h"
+
+Tijdsduur::Tijdsduur() {
+	// TODO Auto-generated constructor stub
+	sec = 0;
+}
+
+void Tijdsduur::eraf(const Tijdsduur& t){
+	sec -= t.sec;
+}
+
+void Tijdsduur::erbij(const Tijdsduur& t){
+	sec += t.sec;
+}
+
+void Tijdsduur::maal(int multiplier){
+	sec *= multiplier;
+}
+
+int Tijdsduur::deTimerTijd(){
+	return sec;
+}
+
+void Tijdsduur::normaliseer(){
+
+}
+
+Tijdsduur::~Tijdsduur() {
+	// TODO Auto-generated destructor stub
+}
+
