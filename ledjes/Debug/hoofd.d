@@ -1,1 +1,0 @@
-hoofd.o: ../hoofd.c

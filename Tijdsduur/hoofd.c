@@ -1,6 +1,6 @@
 #include <iostream> // nodig voor cout (schrijven naar scherm)
 #include <iomanip> // nodig voor setw (veldbreedte definiëren)
-#include "Tijdsduur.h"
+#include "tijdsduur.h"
 
 using namespace std;
 

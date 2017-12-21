@@ -39,7 +39,7 @@ clean:
 	-@echo ' '
 
 post-build:
-	-scp ledjes pi@192.168.2.90:/home/pi/op1/
+	-scp slimmeleds pi@192.168.2.90:/home/pi/op3/
 	-@echo ' '
 
 .PHONY: all clean dependents post-build
