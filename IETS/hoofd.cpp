@@ -2,16 +2,37 @@
 #include <iomanip> // nodig voor setw (veldbreedte definiëren)
 #include "Tijdsduur.h"
 #include "Logled.h"
+#include "SingleLed.h"
+#include "MultiLed.h"
+#include "LichtStrip.h"
+#include "LichtEffect.h"
 #include <unistd.h>
 using namespace std;
 
+void printConnecties(Led& l);
 
-
-#define GPIO18_PAD "/sys/class/gpio/"
+#define GPIO_PAD "/sys/class/gpio/"
 #define GPIO18_NUMMER "18"
 
 int main() {
-    /*
+
+	SingleLed s1("24");
+	SingleLed s2("18");
+	SingleLed s3("17");
+
+	LichtStrip st1;
+	LichtStrip st2;
+
+	st1.voegToe(s1);
+	st2.voegToe(s2);
+
+	st2.voegToe(s3);
+	st1.voegToe(st2);
+	st1.zetAan();
+	cout<<"Connecties: "<<endl;
+	st1.geefConnecties();
+
+	/*
 	Tijdsduur t1(3,50); // t1 is 3 minuten en 50 seconden
     cout<<"t1 = "; t1.print(); cout<<endl;
     Tijdsduur kw(15); // kw is 15 seconden
@@ -32,7 +53,34 @@ int main() {
     return 0;
     */
 
-	Logled l1(GPIO18_PAD, GPIO18_NUMMER);
+	/*
+	SingleLed l1("24");
+	MultiLed l2("18", "23");
+	Logled l3(GPIO_PAD, "17");
+
+	printConnecties(l1);
+	printConnecties(l2);
+	printConnecties(l3);
+
+	l1.init();
+	l2.init();
+	l3.init();
+	l1.zetAan();
+
+	l2.zetAan();
+
+	l3.zetAan();
+
+	usleep(10000000);
+
+	l1.zetUit();
+	l2.zetUit();
+	l3.zetUit();
+	*/
+
+
+	/*
+	//Logled l1(GPIO18_PAD, GPIO18_NUMMER);
 	l1.zetAan();
 	usleep(5000000);
 	l1.zetUit();
@@ -49,4 +97,9 @@ int main() {
 	usleep(5000000);
 	l1.zetUit();
 	usleep(1000000);
+	*/
+}
+
+void printConnecties(Led& l){
+	cout<<"Led(s) verbonden op de volgende poort(en): "<<l.geefConnecties()<<endl;
 }

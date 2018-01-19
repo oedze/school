@@ -10,27 +10,31 @@
 #include <string>
 
 #include "Tijdsduur.h"
+#include "Led.h"
 
 using namespace std;
 
 #ifndef LOGLED_H_
 #define LOGLED_H_
 
-class Logled {
+class Logled: public Led{
 public:
 	Logled(string gpioPath, string gpioNumber);
 	virtual ~Logled();
-	void zetAan();
-	void zetUit();
+	virtual void zetAan();
+	virtual void zetUit();
 	bool ledStatus();
 	void nogTijdTeGaan();
+	virtual string geefConnecties();
+	void init();
+
 private:
 	string gpioNummer;
 	string gpioPad;
 	time_t tijdStipAan;
-	void init();
+
 	Tijdsduur tijd;
-	bool status = false;
+	bool status;
 	void schrijfNaarFileSysteem(string path, string file, string value);
 };
 

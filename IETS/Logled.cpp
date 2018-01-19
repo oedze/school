@@ -14,19 +14,24 @@ using namespace std;
 Logled::Logled(string gpioPath, string gpioNumber):gpioPad(gpioPath), gpioNummer(gpioNumber) {
 	// TODO Auto-generated constructor stub
 	tijd = Tijdsduur(12);
-	init();
+	//init();
+	status = false;
 }
 
 void Logled::zetAan(){
 	if(!status){
 		if(tijd.deTimerTijd() > 0){
 			tijdStipAan = time(0);
-			schrijfNaarFileSysteem(gpioPad+"gpio" + gpioNummer, "/value", "1");
+			schrijfNaarFileSysteem("/sys/class/gpio/gpio" + gpioNummer, "/value", "1");
 			status = true;
 		}
 
 
 	}
+}
+
+string Logled::geefConnecties(){
+	return gpioNummer;
 }
 
 void Logled::nogTijdTeGaan(){
@@ -35,7 +40,7 @@ void Logled::nogTijdTeGaan(){
 
 void Logled::zetUit(){
 	if(status){
-		schrijfNaarFileSysteem(gpioPad+ "gpio"+ gpioNummer, "/value", "0");
+		schrijfNaarFileSysteem("/sys/class/gpio/gpio" + gpioNummer, "/value", "0");
 		tijd.eraf(Tijdsduur(time(0) - tijdStipAan));
 		status = false;
 	}
@@ -56,10 +61,9 @@ void Logled::schrijfNaarFileSysteem(string path, string filename, string value) 
 }
 
 void Logled::init(){
-	schrijfNaarFileSysteem(gpioPad, "export", gpioNummer);
-	usleep(1000000);
-	schrijfNaarFileSysteem(gpioPad + "gpio" + gpioNummer, "/direction", "out");
-
+	schrijfNaarFileSysteem("/sys/class/gpio/", "export", gpioNummer);
+	//usleep(1000000);
+	schrijfNaarFileSysteem("/sys/class/gpio/gpio" + gpioNummer, "/direction", "out");
 }
 
 
