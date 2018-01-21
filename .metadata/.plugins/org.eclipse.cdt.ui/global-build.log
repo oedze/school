@@ -1,18 +1,57 @@
-15:42:01 **** Incremental Build of configuration Debug for project IETS ****
+16:03:38 **** Build of configuration Debug for project Unittest ****
 make all 
+Building file: ../Led.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"Led.d" -MT"Led.o" -o "Led.o" "../Led.cpp"
+Finished building: ../Led.cpp
+ 
+Building file: ../LichtEffect.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"LichtEffect.d" -MT"LichtEffect.o" -o "LichtEffect.o" "../LichtEffect.cpp"
+Finished building: ../LichtEffect.cpp
+ 
 Building file: ../LichtStrip.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"LichtStrip.d" -MT"LichtStrip.o" -o "LichtStrip.o" "../LichtStrip.cpp"
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"LichtStrip.d" -MT"LichtStrip.o" -o "LichtStrip.o" "../LichtStrip.cpp"
 Finished building: ../LichtStrip.cpp
  
-Building target: IETS
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "IETS"  ./Led.o ./LichtEffect.o ./LichtStrip.o ./Logled.o ./MutliLed.o ./SingleLed.o ./Tijdsduur.o ./hoofd.o   
-Finished building target: IETS
+Building file: ../Logled.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"Logled.d" -MT"Logled.o" -o "Logled.o" "../Logled.cpp"
+In file included from ../Logled.cpp:8:0:
+../Logled.h: In constructor ‘Logled::Logled(std::string, std::string)’:
+../Logled.h:33:9: warning: ‘Logled::gpioPad’ will be initialized after [-Wreorder]
+  string gpioPad;
+         ^
+../Logled.h:32:9: warning:   ‘std::string Logled::gpioNummer’ [-Wreorder]
+  string gpioNummer;
+         ^
+../Logled.cpp:14:1: warning:   when initialized here [-Wreorder]
+ Logled::Logled(string gpioPath, string gpioNumber):gpioPad(gpioPath), gpioNummer(gpioNumber) {
+ ^
+Finished building: ../Logled.cpp
  
-make --no-print-directory post-build
-scp IETS pi@pi:/home/pi/op3/Tijdsduur
-scp: /home/pi/op3/Tijdsduur: Text file busy
-makefile:57: recipe for target 'post-build' failed
-make[1]: [post-build] Error 1 (ignored)
+Building file: ../MutliLed.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"MutliLed.d" -MT"MutliLed.o" -o "MutliLed.o" "../MutliLed.cpp"
+Finished building: ../MutliLed.cpp
  
+Building file: ../SingleLed.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"SingleLed.d" -MT"SingleLed.o" -o "SingleLed.o" "../SingleLed.cpp"
+Finished building: ../SingleLed.cpp
+ 
+Building file: ../Tijdsduur.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"Tijdsduur.d" -MT"Tijdsduur.o" -o "Tijdsduur.o" "../Tijdsduur.cpp"
+Finished building: ../Tijdsduur.cpp
+ 
+Building file: ../hoofd.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -ICppUTest -MMD -MP -MF"hoofd.d" -MT"hoofd.o" -o "hoofd.o" "../hoofd.cpp"
+../hoofd.cpp:11:44: fatal error: CppUTest/commandLineTestRunner.h: No such file or directory
+ #include <CppUTest/commandLineTestRunner.h>
+                                            ^
+compilation terminated.
+make: *** [hoofd.o] Error 1
+subdir.mk:39: recipe for target 'hoofd.o' failed
