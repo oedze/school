@@ -11,6 +11,8 @@
 #include <ostream>
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <unistd.h>
 
 #include "LichtEffect.h"
 using namespace std;
@@ -18,16 +20,16 @@ using namespace std;
 class LichtStrip: public LichtEffect {
 public:
 	LichtStrip();
-	//LichtStrip(LichtEffect&);
+	LichtStrip(LichtEffect&);
 	virtual ~LichtStrip();
 	void shift(int);
 	virtual void zetAan();
 	virtual void zetUit();
 	virtual string geefConnecties();
-	void voegToe(LichtEffect& effect);
-	void verwijder(LichtEffect& effect);
-private:
-	vector<LichtEffect&> lichten;
+	void voegToe(LichtEffect&);
+	void verwijder(LichtEffect&);
+	vector<LichtEffect*> lichten;
 };
+
 
 #endif /* LICHTSTRIP_H_ */

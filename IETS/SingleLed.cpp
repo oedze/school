@@ -19,6 +19,7 @@ SingleLed::SingleLed(string pinNumber):port(pinNumber) {
 
 SingleLed::~SingleLed() {
 	// TODO Auto-generated destructor stubv
+	zetUit();
 }
 
 void SingleLed::zetAan(){
@@ -38,5 +39,7 @@ void SingleLed::init(){
 	//usleep(1000000);
 	schrijfNaarFileSysteem("/sys/class/gpio/gpio" + port, "/direction", "out");
 }
+
+
 
 //} /* namespace std */

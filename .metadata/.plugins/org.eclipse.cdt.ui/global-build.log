@@ -1,122 +1,18 @@
-17:12:57 **** Incremental Build of configuration Debug for project IETS ****
+15:42:01 **** Incremental Build of configuration Debug for project IETS ****
 make all 
 Building file: ../LichtStrip.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"LichtStrip.d" -MT"LichtStrip.o" -o "LichtStrip.o" "../LichtStrip.cpp"
-In file included from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/arm-linux-gnueabihf/bits/c++allocator.h:33:0,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/allocator.h:46,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/string:41,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/locale_classes.h:40,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/ios_base.h:41,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ios:42,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ostream:38,
-                 from ../LichtStrip.h:11,
-                 from ../LichtStrip.cpp:8:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ext/new_allocator.h: In instantiation of ‘class __gnu_cxx::new_allocator<LichtEffect&>’:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/allocator.h:92:11:   required from ‘class std::allocator<LichtEffect&>’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ext/alloc_traits.h:199:53:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<LichtEffect&> >’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:75:28:   required from ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:210:11:   required from ‘class std::vector<LichtEffect&>’
-../LichtStrip.h:30:23:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ext/new_allocator.h:63:26: error: forming pointer to reference type ‘LichtEffect&’
-       typedef _Tp*       pointer;
-                          ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ext/new_allocator.h:64:26: error: forming pointer to reference type ‘LichtEffect&’
-       typedef const _Tp* const_pointer;
-                          ^
-In file included from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/string:41:0,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/locale_classes.h:40,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/ios_base.h:41,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ios:42,
-                 from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ostream:38,
-                 from ../LichtStrip.h:11,
-                 from ../LichtStrip.cpp:8:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/allocator.h: In instantiation of ‘class std::allocator<LichtEffect&>’:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/ext/alloc_traits.h:199:53:   required from ‘struct __gnu_cxx::__alloc_traits<std::allocator<LichtEffect&> >’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:75:28:   required from ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:210:11:   required from ‘class std::vector<LichtEffect&>’
-../LichtStrip.h:30:23:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/allocator.h:97:26: error: forming pointer to reference type ‘LichtEffect&’
-       typedef _Tp*       pointer;
-                          ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/allocator.h:98:26: error: forming pointer to reference type ‘LichtEffect&’
-       typedef const _Tp* const_pointer;
-                          ^
-In file included from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/vector:64:0,
-                 from ../LichtStrip.h:13,
-                 from ../LichtStrip.cpp:8:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘class std::vector<LichtEffect&>’:
-../LichtStrip.h:30:23:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:237:20: error: no members matching ‘std::vector<LichtEffect&>::_Base {aka std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >}::_M_allocate’ in ‘std::vector<LichtEffect&>::_Base {aka struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >}’
-       using _Base::_M_allocate;
-                    ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:238:20: error: no members matching ‘std::vector<LichtEffect&>::_Base {aka std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >}::_M_deallocate’ in ‘std::vector<LichtEffect&>::_Base {aka struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >}’
-       using _Base::_M_deallocate;
-                    ^
-../LichtStrip.cpp: In member function ‘virtual void LichtStrip::zetAan()’:
-../LichtStrip.cpp:32:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-  for(int x=0; x<lichten.size(); x++){
-                              ^
-In file included from /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/vector:64:0,
-                 from ../LichtStrip.h:13,
-                 from ../LichtStrip.cpp:8:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::~vector() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’:
-../LichtStrip.cpp:12:24:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:416:30: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_start’
-         _M_get_Tp_allocator()); }
-                              ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:416:30: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_finish’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>; std::vector<_Tp, _Alloc>::size_type = unsigned int]’:
-../LichtStrip.cpp:32:30:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:646:50: error: ‘const struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_start’
-       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-                                                  ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:646:50: error: ‘const struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_finish’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>; std::vector<_Tp, _Alloc>::reference = LichtEffect&; std::vector<_Tp, _Alloc>::size_type = unsigned int]’:
-../LichtStrip.cpp:33:12:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:771:41: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_start’
-       { return *(this->_M_impl._M_start + __n); }
-                                         ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>; std::vector<_Tp, _Alloc>::value_type = LichtEffect&]’:
-../LichtStrip.cpp:51:26:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:903:30: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
-  if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
-                              ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:903:30: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_finish’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:906:34: error: ‘construct’ is not a member of ‘std::vector<LichtEffect&>::_Alloc_traits {aka __gnu_cxx::__alloc_traits<std::allocator<LichtEffect&> >}’
-                               __x);
-                                  ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:906:34: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_finish’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:907:6: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_finish’
-      ++this->_M_impl._M_finish;
-      ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:913:22: error: ‘end’ was not declared in this scope
-    _M_insert_aux(end(), __x);
-                      ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:913:28: error: ‘_M_insert_aux’ was not declared in this scope
-    _M_insert_aux(end(), __x);
-                            ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:249:15:   required from ‘std::vector<_Tp, _Alloc>::vector() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’
-../LichtStrip.cpp:12:24:   required from here
-subdir.mk:39: recipe for target 'LichtStrip.o' failed
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:161:33: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_start’
-         - this->_M_impl._M_start); }
-                                 ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:161:9: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_start’
-         - this->_M_impl._M_start); }
-         ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:161:9: error: ‘struct std::_Vector_base<LichtEffect&, std::allocator<LichtEffect&> >::_Vector_impl’ has no member named ‘_M_end_of_storage’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:161:33: error: ‘_M_deallocate’ was not declared in this scope
-         - this->_M_impl._M_start); }
-                                 ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’:
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:125:17:   required from ‘std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:249:15:   required from ‘std::vector<_Tp, _Alloc>::vector() [with _Tp = LichtEffect&; _Alloc = std::allocator<LichtEffect&>]’
-../LichtStrip.cpp:12:24:   required from here
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:87:68: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_start’
-  : _Tp_alloc_type(), _M_start(0), _M_finish(0), _M_end_of_storage(0)
-                                                                    ^
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:87:68: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_finish’
-/opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/include/c++/4.8.3/bits/stl_vector.h:87:68: error: using invalid field ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_M_end_of_storage’
-make: *** [LichtStrip.o] Error 1
+Finished building: ../LichtStrip.cpp
+ 
+Building target: IETS
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "IETS"  ./Led.o ./LichtEffect.o ./LichtStrip.o ./Logled.o ./MutliLed.o ./SingleLed.o ./Tijdsduur.o ./hoofd.o   
+Finished building target: IETS
+ 
+make --no-print-directory post-build
+scp IETS pi@pi:/home/pi/op3/Tijdsduur
+scp: /home/pi/op3/Tijdsduur: Text file busy
+makefile:57: recipe for target 'post-build' failed
+make[1]: [post-build] Error 1 (ignored)
+ 

@@ -20,17 +20,33 @@ int main() {
 	SingleLed s2("18");
 	SingleLed s3("17");
 
-	LichtStrip st1;
-	LichtStrip st2;
+	s1.init();
+	s2.init();
+	s3.init();
 
-	st1.voegToe(s1);
-	st2.voegToe(s2);
+	//s1.zetAan();
+	//s2.zetAan();
+	//s3.zetAan();
+
+	//cout<<"Lichtstrip st1 aanmaken"<<endl;;
+	LichtStrip st1(s1);
+	LichtStrip st2(s2);
 
 	st2.voegToe(s3);
 	st1.voegToe(st2);
+
 	st1.zetAan();
-	cout<<"Connecties: "<<endl;
-	st1.geefConnecties();
+	usleep(1000000);
+	st1.zetUit();
+
+	cout<<"Connecties: "; st1.geefConnecties();
+
+	usleep(2000000);
+	st1.shift(5);
+	st1.verwijder(st2);
+
+	cout<<"Connecties: "; st1.geefConnecties();
+	usleep(5000000);
 
 	/*
 	Tijdsduur t1(3,50); // t1 is 3 minuten en 50 seconden

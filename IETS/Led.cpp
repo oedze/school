@@ -15,9 +15,12 @@ Led::Led() {
 	serienummer = rand()%10000;
 }
 
+
 Led::~Led() {
 	// TODO Auto-generated destructor stub
+	zetUit();
 }
+
 
 void Led::init(){
 
@@ -31,7 +34,7 @@ void Led::zetUit(){
 }
 
 void Led::schrijfNaarFileSysteem(string path, string filename, string value) {
-   //cout<< path<<" "<<filename <<" "<< value<<" "<<path +filename<<endl;
+   cout<< path<<" "<<filename <<" "<< value<<" "<<path +filename<<endl;
    fstream fs;
    fs.open((path + filename).c_str(), fstream::out);
    fs << value;

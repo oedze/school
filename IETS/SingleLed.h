@@ -19,10 +19,11 @@ class SingleLed: public Led {
 public:
 	SingleLed(string pinNumber);
 	virtual ~SingleLed();
-	virtual void zetAan();
-	virtual void zetUit();
-	virtual string geefConnecties();
-	virtual void init();
+	void zetAan();
+	void zetUit();
+	string geefConnecties();
+	void init();
+
 	//virtual void schrijfNaarFileSysteem(string, string, string);
 private:
 	string port;

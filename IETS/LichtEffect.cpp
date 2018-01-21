@@ -28,5 +28,9 @@ void LichtEffect::zetUit(){
 
 }
 
+string LichtEffect::geefConnecties(){
+	return "";
+}
+
 
 /* namespace std */
